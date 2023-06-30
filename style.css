@@ -1,0 +1,247 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #222;
+}
+
+.curd {
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 10px;
+
+}
+
+pre {
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-top: 6px;
+
+}
+
+.inputs {
+    margin: 15px;
+    /****************/
+}
+
+input {
+    background-color: #101010;
+    border: 2px solid #555;
+    border-radius: 5px;
+    height: 25px;
+    color: rgb(255, 255, 255);
+
+}
+
+.text:focus,
+.search:focus,
+.catogre:focus,
+.count:focus,
+.number:focus {
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+.text {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.number {
+    width: 18.2%;
+    margin-bottom: 10px;
+}
+
+.submit,
+.deletall {
+    border-radius: 40px;
+    display: block;
+    width: 80%;
+    background-color: rgb(80, 0, 117);
+    color: white;
+    font-size: 16px;
+    margin: auto;
+    height: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.submit:hover,
+.deletall:hover {
+
+    width: 85%;
+    height: 28px;
+    border: 2px solid rgb(239, 169, 231);
+    letter-spacing: 1px;
+}
+
+.search {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.searchButton {
+
+    width: 40%;
+    background-color: rgb(80, 0, 117);
+    color: white;
+    font-size: 16px;
+    margin: auto;
+    height: 30px;
+    display: inline-block;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.searchButton:hover {
+    height: 33px;
+    border: 2px solid rgb(239, 169, 231);
+    letter-spacing: 1px;
+
+}
+
+hr {
+    border: 1px solid #444;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.count,
+.catogre {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+
+
+#total {
+    font-size: 16px;
+    background-color: rgb(239, 169, 231);
+    padding: 4px;
+    border-radius: 8px;
+}
+
+#total::before {
+    content: 'Total :';
+}
+
+table {
+    color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+table button {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(80, 0, 117);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+
+table button:hover {
+    padding: 5.2px;
+    border: rgb(239, 169, 231) solid 1px;
+    letter-spacing: 0.5px;
+}
+
+table th {
+
+    text-transform: uppercase;
+}
+
+table td {
+    padding: 5px;
+
+}
+
+.stylethead {
+    padding: 2%;
+    margin: 0% 2% 0% 2%;
+}
+
+
+
+
+
+
+
+
+
+.scrol
+{
+    position: fixed;
+    margin: 2px;
+    bottom: 30px;
+    right: 40px;
+    transform: translateX(0%) rotate(45deg);
+    font-size:20px;
+    text-align: center;
+    align-items: center;
+    padding: 4px;
+    background-color: rgb(235, 154, 3);
+    color: rgb(255, 255, 255);
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border: solid 5px rgb(255, 166, 0) ;
+    z-index: 99;
+}
+.scrol::after{
+    content: " ";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+
+
+    border: solid 4px orange;
+    width: 40px;
+    height:40px;
+    
+}
+.enter{
+    transform: translateX(30%) rotate(-45deg);
+    transform: translateY(-10%)  rotate(-45deg);
+    text-align: center;
+    align-items: center;
+}
+.enter:hover{
+transform: translateX(40%)translateY(40px)rotate();
+}
+.scrol:hover
+{
+    font-size: 22px;
+  
+    font-weight: bold;
+    background-color: rgb(255, 200, 0);
+    border:solid 5px  rgb(255, 200, 0) ;
+}
+.scrol::after:hover{
+    border:solid 5px  rgb(255, 200, 0) ;
+}

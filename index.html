@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shop</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="curd">
+        <div class="title">
+            <p>cruds</p>
+            <pre>product management system</pre>
+        </div>
+        <div class="inputs">
+            <form>
+                <input type="text" placeholder="title" class="text" id="title" required>
+                <input type="number" placeholder="price" class="number" id="price" onkeyup="getTotal()" required>
+                <input type="number" placeholder="taxes" class="number" id="taxes" onkeyup="getTotal()">
+                <input type="number" placeholder="ads" class="number" id="ads" onkeyup="getTotal()">
+                <input type="number" placeholder="discount" class="number" id="discount" onkeyup="getTotal()">
+                <small id="total"></small>
+                <input type="number" placeholder="count" class="count" id="count" >
+                <input type="text" placeholder="catogrey" class="catogre" id="catogrey" required>
+                <input type="button" class="submit" value="create" id="submit">
+            </form>
+
+
+        </div>
+        <div class="outputs">
+            <div class="searchcount">
+                <input type="text" placeholder="search" class="search" id="search" onkeyup="searchdata(this.value)">
+                <input type="button" value="search By title" class="searchButton" id="searchBYtitle" onclick="getSearchMood(this.id)">
+                <input type="button" value="search By category" class="searchButton" id="search BY category" onclick="getSearchMood(this.id )">
+            </div>
+        </div>
+        <div id="deletall">
+
+        </div>
+        <table>
+            <tr>
+                <th class="stylethead">id</th>
+                <th class="stylethead">title</th>
+                <th class="stylethead"> price</th>
+                <th class="stylethead">taxes</th>
+                <th class="stylethead">ads</th>
+                <th class="stylethead">discount</th>
+                <th class="stylethead">category</th>
+                <th class="stylethead">total</th>
+                <th class="stylethead">updata</th>
+                <th class="stylethead">delet</th>
+            </tr>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    </div>
+    <div class="scrol" id="scrol">
+        <div class="enter">
+            ^
+        </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+
+</html>
